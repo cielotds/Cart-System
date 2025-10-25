@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+    --font-display: "Lobster", cursive;
+    --font-color: #D2232A;
+}
