@@ -3,40 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="src/output.css">
+    <title>Potato Corner Cart System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-<style>
-  .pc-logo {
-    font-family: 'Fredoka One', sans-serif;
-    font-weight: 400;
-  }
-</style>
-
-  <style>
-    .pc-logo {
-      font-family: 'Fredoka One', sans-serif;
-    }
-  </style>
+    <style>
+        .pc-logo {
+            font-family: 'Fredoka One', sans-serif;
+            font-weight: 400;
+        }
+    </style>
 </head>
-
 <body class="bg-[#FFFBEA]">
   <header class="flex justify-between items-center p-4 bg-[#009245] text-white shadow-md">
     <a href="index.html" class="flex items-center space-x-2">
       <img src="assets/potcor.png" alt="Potato Corner Logo" class="h-20 w-auto rounded-md" />
     </a>
-    <nav>
-      <ul class="flex space-x-6 text-lg">
-        <li><a href="#" class="font-semibold hover:text-[#FFD700]">Home</a></li>
-        <li><a href="#" class="font-semibold hover:text-[#FFD700]">Products</a></li>
-        <li><a href="#" class="font-semibold hover:text-[#FFD700]">Cart</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <main class="p-8 text-center">
-    <h2 class="text-2xl font-bold text-[#009245]">Welcome to the Potato Corner Cart System</h2>
-    <p class="text-gray-700 mt-2">Choose your favorite flavored fries and add them to your cart!</p>
+  <main id="main">
+      <div class="container mx-auto p-4 flex flex-col lg:flex-row gap-8" id="divParent">
+        <!-- Menu Section -->
+        <div class="lg:w-3/4" id="divChild">
+            <h2 class = "text-2xl font-bold text-[#009245] text-center mb-6">Choose your favorite flavored fries and add them to your cart!</h2>
+            
+            <!-- Grid of Products - 4 columns -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- ITEM 1 -->
+                <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
+                  <img src="assets/1.png" alt="Cheese Fries" class="w-100 h-50 p-3 flex justify-center">
+                    <h3 class="text-lg font-bold text-[#009245] text-center">Cheese</h3>
+
+                    <select class = "border border-gray-300 rounded-md p-2 w-full text-center mt-3 mb-3">
+                      <option disabled selected>Select Size</option>
+                      <option>Regular - ₱29</option>
+                      <option>Large - ₱55</option>
+                      <option>Jumbo - ₱85</option>
+                      <option>Mega - ₱110</option>
+                      <option>Giga - ₱179</option>
+                      <option>Tera - ₱209</option>
+                    </select>
+
+                    <button class="bg-[#009245] text-white px-4 py-2 rounded-md hover:bg-[#007a38] w-full">Add to Cart</button> 
+                </div>
+
+                <!-- ITEM 2 -->
+                <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
+                  <img src="assets/2.png" alt="Barbeque Fries" class="w-100 h-50 p-3 flex justify-center">
+                    <h3 class="text-lg font-bold text-[#009245] text-center">Barbeque</h3>
+                    <select class = "border border-gray-300 rounded-md p-2 w-full text-center mt-3 mb-3">
+                      <option disabled selected>Select Size</option>
+                      <option>Regular - ₱29</option>
+                      <option>Large - ₱55</option>
+                      <option>Jumbo - ₱85</option>
+                      <option>Mega - ₱110</option>
+                      <option>Giga - ₱179</option>
+                      <option>Tera - ₱209</option>
+                    </select>
+
+                    <button class="bg-[#009245] text-white px-4 py-2 rounded-md hover:bg-[#007a38] w-full">Add to Cart</button> 
+                </div>
+
+                <!-- ITEM 3 -->
+                <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
+                  <img src="assets/3.png" alt="Sour Cream Fries" class="w-100 h-50 p-3 flex justify-center">
+                    <h3 class="text-lg font-bold text-[#009245] text-center">Sour Cream</h3>
+                    <select class = "border border-gray-300 rounded-md p-2 w-full text-center mt-3 mb-3">
+                      <option disabled selected>Select Size</option>
+                      <option>Regular - ₱29</option>
+                      <option>Large - ₱55</option>
+                      <option>Jumbo - ₱85</option>
+                      <option>Mega - ₱110</option>
+                      <option>Giga - ₱179</option>
+                      <option>Tera - ₱209</option>
+                    </select>
+
+                    <button class="bg-[#009245] text-white px-4 py-2 rounded-md hover:bg-[#007a38] w-full">Add to Cart</button> 
+                </div>
+
+                <!-- ITEM 4 -->
+                <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
+                  <img src="assets/4.png" alt="Chili Barbeque Fries" class="w-100 h-50 p-3 flex justify-center">
+                    <h3 class="text-lg font-bold text-[#009245] text-center">Chili Barbeque</h3>
+                    <select class = "border border-gray-300 rounded-md p-2 w-full text-center mt-3 mb-3">
+                      <option disabled selected>Select Size</option>
+                      <option>Regular - ₱29</option>
+                      <option>Large - ₱55</option>
+                      <option>Jumbo - ₱85</option>
+                      <option>Mega - ₱110</option>
+                      <option>Giga - ₱179</option>
+                      <option>Tera - ₱209</option>
+                    </select>
+
+                    <button class="bg-[#009245] text-white px-4 py-2 rounded-md hover:bg-[#007a38] w-full">Add to Cart</button> 
+                </div>
+                
+                <!-- ITEM 5 -->
+                <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
+                  <img src="assets/5.png" alt="Golden Sweet Corn Fries" class="w-100 h-50 p-3 flex justify-center">
+                    <h3 class="text-lg font-bold text-[#009245] text-center">Golden Sweet Corn</h3>
+                    <select class = "border border-gray-300 rounded-md p-2 w-full text-center mt-3 mb-3">
+                      <option disabled selected>Select Size</option>
+                      <option>Regular - ₱29</option>
+                      <option>Large - ₱55</option>
+                      <option>Jumbo - ₱85</option>
+                      <option>Mega - ₱110</option>
+                      <option>Giga - ₱179</option>
+                      <option>Tera - ₱209</option>
+                    </select>
+
+                    <button class="bg-[#009245] text-white px-4 py-2 rounded-md hover:bg-[#007a38] w-full">Add to Cart</button> 
+                </div>
+                
+                <!-- ITEM 6 -->
+                <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
+                  <img src="assets/6.png" alt="White Cheddar Fries" class="w-100 h-50 p-3 flex justify-center">
+                    <h3 class="text-lg font-bold text-[#009245] text-center">White Cheddar</h3>
+                    <select class = "border border-gray-300 rounded-md p-2 w-full text-center mt-3 mb-3">
+                      <option disabled selected>Select Size</option>
+                      <option>Regular - ₱29</option>
+                      <option>Large - ₱55</option>
+                      <option>Jumbo - ₱85</option>
+                      <option>Mega - ₱110</option>
+                      <option>Giga - ₱179</option>
+                      <option>Tera - ₱209</option>
+                    </select>
+
+                    <button class="bg-[#009245] text-white px-4 py-2 rounded-md hover:bg-[#007a38] w-full">Add to Cart</button> 
+                </div>
+                
+                <!-- ITEM 7 -->
+                <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
+                  <img src="assets/7.png" alt="Wasabi Fries" class="w-100 h-50 p-3 flex justify-center">
+                    <h3 class="text-lg font-bold text-[#009245] text-center">Wasabi</h3>
+                    <select class = "border border-gray-300 rounded-md p-2 w-full text-center mt-3 mb-3">
+                      <option disabled selected>Select Size</option>
+                      <option>Regular - ₱29</option>
+                      <option>Large - ₱55</option>
+                      <option>Jumbo - ₱85</option>
+                      <option>Mega - ₱110</option>
+                      <option>Giga - ₱179</option>
+                      <option>Tera - ₱209</option>
+                    </select>
+
+                    <button class="bg-[#009245] text-white px-4 py-2 rounded-md hover:bg-[#007a38] w-full">Add to Cart</button> 
+                </div>
+                
+                <!-- ITEM 8 -->
+                <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
+                  <img src="assets/8.png" alt="Truffle Fries" class="w-100 h-50 p-3 flex justify-center">
+                    <h3 class="text-lg font-bold text-[#009245] text-center">Truffle</h3>
+                    <select class = "border border-gray-300 rounded-md p-2 w-full text-center mt-3 mb-3">
+                      <option disabled selected>Select Size</option>
+                      <option>Regular - ₱29</option>
+                      <option>Large - ₱55</option>
+                      <option>Jumbo - ₱85</option>
+                      <option>Mega - ₱110</option>
+                      <option>Giga - ₱179</option>
+                      <option>Tera - ₱209</option>
+                    </select>
+
+                    <button class="bg-[#009245] text-white px-4 py-2 rounded-md hover:bg-[#007a38] w-full">Add to Cart</button> 
+                </div>
+            </div>
+        </div>
+        
+        <!-- Cart Section -->
+        <div class="lg:w-1/4">
+            <div class="bg-white rounded-lg shadow-md p-4 sticky top-4">
+                <h2 class="text-xl font-bold text-[#009245] mb-4">Your Cart</h2>
+                <div class="container">
+
+                </div>
+                <!-- Cart items -->
+                <button class="bg-[#009245] text-white w-full py-2 rounded-md mt-4 hover:bg-[#007a38]">
+                    Checkout
+                </button>
+                
+                <button class="bg-gray-200 text-gray-700 w-full py-2 rounded-md mt-2 hover:bg-gray-300">
+                    Clear Cart
+                </button>
+            </div>
+        </div>
+    </div>
   </main>
+  <script src="./process.js"></script>
 </body>
 </html>
